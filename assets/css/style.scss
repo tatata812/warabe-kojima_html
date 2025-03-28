@@ -208,12 +208,12 @@ header
  ================================= */
 // メインビジュアル
 .main-visual {
-  padding: 80px 12px 60px;
+  padding: 80px 12px 24px;
   text-align: center;
 
   @include tab {
     text-align: left;
-    padding: 24px 12px;
+    padding: 24px 12px 12px;
 
   }
 

@@ -985,13 +985,13 @@ header
 トップページ
  ================================= */
 .main-visual {
-  padding: 80px 12px 60px;
+  padding: 80px 12px 24px;
   text-align: center;
 }
 @media (max-width: 820px) {
   .main-visual {
     text-align: left;
-    padding: 24px 12px;
+    padding: 24px 12px 12px;
   }
 }
 .main-visual__top-img {
