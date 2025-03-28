@@ -191,7 +191,7 @@ header
     align-items: flex-end;
     gap: 8px;
     margin: 0 0 24px;
-   
+
 
 
   }
@@ -208,59 +208,60 @@ header
  ================================= */
 // メインビジュアル
 .main-visual {
-  padding: 80px 12px;
+  padding: 80px 12px 60px;
   text-align: center;
 
-  @include tab{
-  text-align: left;
-  padding: 24px 12px;
+  @include tab {
+    text-align: left;
+    padding: 24px 12px;
 
   }
-  
 
-  &__top-text {
-    font-size: 36px;
-    margin: 0 0 40px;
 
-    @include tab{
+  &__top-img {
+    max-width: 40px;
+    margin: 0 auto 80px;
+
+    @include tab {
+      max-width: 32px;
+
       text-align: center;
       font-size: 24px;
-      margin: 0 0 24px;
+      margin: 0 auto 40px;
 
-      }
+    }
 
   }
 
   &__img {
-    max-width: 200px;
+    max-width: 800px;
     margin: 0 auto 64px;
 
-    @include tab{
-      max-width: 120px;
+    @include tab {
       margin: 0 auto 32px;
 
     }
   }
 
   &__bottom-text {
-    font-size: 28px;
-    margin: 0 0 64px;
+    font-size: 36px;
+    margin: 0 0 48px;
 
-    @include tab{
+    @include tab {
       font-size: 22px;
       margin: 0 0 32px;
       text-align: center;
-  
+
     }
   }
 
   &__lead-text {
     margin: 0 0 24px;
-  
 
-    @include tab{
+
+    @include tab {
       margin: 0 auto 24px;
-      max-width: 260px;
+      max-width: 340px;
     }
 
   }
@@ -304,7 +305,7 @@ header
 
 
 
-.top-about {
+.top-menu {
   padding: 0 0 140px;
 
   @include tab {
@@ -324,7 +325,7 @@ header
 
   &__text-wrap {
     width: 50%;
-    background: #F6F6F6;
+    background:  #F4E8D6;
     position: relative;
 
     @include tab {
@@ -332,6 +333,7 @@ header
     }
 
   }
+
 
   &__text {
     position: absolute;
@@ -346,7 +348,11 @@ header
       transform: translate(0, 0);
       padding: 60px 12px;
     }
-
+    span {
+      display: block;
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
 
   }
 
@@ -379,15 +385,16 @@ header
 
 
 .top-store {
-  padding: 0 12px 140px;
+  padding: 0 0 140px;
 
   @include tab {
-    padding: 0 12px 80px;
+    padding: 0 0 80px;
   }
 
   &__lead {
     text-align: center;
-    margin: -40px 0 60px;
+    margin: -20px 0 60px;
+    padding: 0 12px;
 
 
 
@@ -397,80 +404,11 @@ header
     }
   }
 
-  &__box {
-    display: flex;
-    max-width: 1120px;
-    margin: 0 auto;
-    gap: 24px;
-
-    @include tab {
-      flex-direction: column;
-    }
-  }
-
-  &__item {
-    width: calc((100% - 24px) / 2);
-
-    @include tab {
-      width: 100%;
-    }
-  }
-
-  &__item-ttl {
-    font-size: 24px;
-    margin: 0 0 20px;
-
-    @include tab {
-      font-size: 20px;
-      margin: 0 0 12px;
-    }
-  }
-
-  &__item-img {
-    margin: 0 0 20px;
-  }
-
-  &__link {
-    max-width: 160px;
-    display: block;
-    margin: 0 0 0 auto;
-  }
+  
 
 }
 
-.top-insta {
-  padding: 0 12px 140px;
 
-  @include tab {
-    padding: 0 12px 60px;
-  }
-
-  &__inner {
-    max-width: 1120px;
-    margin: 0 auto;
-  }
-
-  &__sub-ttl {
-    font-size: 24px;
-    margin: 0 0 20px;
-
-    @include tab {
-      font-size: 20px;
-      margin: 0 0 12px;
-    }
-  }
-
-  &__box {
-    height: 300px;
-    background-color: #acacac;
-    margin: 0 0 60px;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-
-}
 
 
 
@@ -481,7 +419,7 @@ header
 footer
  ================================= */
 
- .footer {
+.footer {
   background: #B89D7E;
   padding: 48px 12px;
 
@@ -508,6 +446,7 @@ footer
 
 
   }
+
   &__link {
     display: flex;
     justify-content: center;

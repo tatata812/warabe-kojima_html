@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
-  <title>わらべ菜魚洞</title>
+  <title>こじまわらべ</title>
   <meta name="description" content="<?php echo $des; ?>">
   <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
   <meta name="robots" content="none">
@@ -28,6 +28,9 @@
   <meta name="twitter:title"
     content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
   <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
@@ -85,127 +88,110 @@
   </header>
 
   <div class="main page-top">
-    <!-- <div class="main-visual">
-      <p class="main-visual__top-text">わらべ菜魚洞</p>
+    <div class="main-visual">
+      <div class="main-visual__top-img"><img src="assets/img/top/mv-logo.png" alt="こじまわらべ"></div>
       <div class="main-visual__img">
-      <img src="assets/img/top/ajihurai.png" alt="アジフライ">
+        <img src="assets/img/top/top-history01.jpg" alt="こじま食堂">
       </div>
-      <p class="main-visual__bottom-text">小田原のアジフライは、<br class="sp-block">「わらべ」から始まった。</p>
-      <p class="main-visual__lead-text">1999年の開店当初から、<br>
-        アジフライが名物。</p>
-        <p class="main-visual__lead-text">目の前の小田原港から届くアジは<br>
-          黄金の衣をまとって究極のアジフライに<br>
-          生まれ変わります。</p>
+      <p class="main-visual__bottom-text">贅沢な時間は、<br class="sp-block">漁港にある。</p>
+      <p class="main-visual__lead-text">小田原漁港の新鮮な食材。<br>
+        半世紀の歴史の中で培われた、料理長の技術。<br>
+        食を楽しむための、細部までこだわった店舗空間。</p>
+        <p class="main-visual__lead-text">すべてを合わせ持った、豊かな魚食体験を。</p>
     
-    </div> -->
+    </div>
 
-    <!-- <section class="top-history section-style">
-      <h2 class="ttl-style fadein-anime">小田原漁港と共に<br class="sp-block">歩んできた、50年間。</h2>
+    <section class="top-history section-style">
       <div class="top-history__img">
         <img src="assets/img/top/top-history01.jpg" alt="こじま食堂">
       </div>
-      <p class="top-history__text">昭和48年（1973年）、 こじま食堂が営業開始。<br>
-        小田原漁港にほとんど飲食店が無かった時代から、<br class="pc-block">
-        小田原漁港随一の魚料理食堂として、一時代を築きました。</p>
-      <div class="top-history__img">
-        <img src="assets/img/top/top-history02.jpg" alt="わらべ菜魚洞">
-      </div>
-      <p class="top-history__text">その後、25年。平成11年（1999年）にわらべ菜魚洞がオープン。<br>
-        両店は新鮮な地魚が食べられる小田原港の料理店の先駆けとして共に満席で賑わう人気店として、<br class="pc-block">
-        切磋琢磨し併存してきました。</p>
+      <p class="top-history__text">こじま食堂の歴史は半世紀以上。昭和48年(1973年）に誕生。<br>
+        小田原港にほとんど飲食店が無かった時代、地元のみならず東京近郊から広くお客様が訪れ、<br class="pc-block">
+        小田原港随一の魚料理食堂として一時代を築きました。</p>
       <div class="top-history__img">
         <img src="assets/img/top/top-history03.jpg" alt="こじまわらべ">
       </div>
-      <p class="top-history__text">2021年秋、こじま食堂は惜しまれつつ閉店しますが、明ける2022年、<br class="pc-block">
-        わらべがこじまの跡地に店を再生させるべく<br class="pc-block">
-        「こじまわらべ」が誕生。わらべの二号店であるだけにとどまらず、<br class="pc-block">
-        港のランドマークこじまの名を継ぎました。</p>
-    </section> -->
+      <p class="top-history__text">2021年秋、こじま食堂は惜しまれつつ閉店.<br>
+        2022年、わらべがこじまの跡地に店を継承すべく「こじまわらべ」が誕生。<br>
+        こじまとわらべの本気を凝縮してお待ちしています。</p>
+    </section>
 
-    <!-- <section class="top-about">
-      <h2 class="ttl-style fadein-anime">わらべが美味しい理由</h2>
-      <div class="top-about__box">
-        <div class="top-about__img fadein-anime02">
-          <img src="assets/img/top/top-about02.jpg" alt="わらべが美味しい理由">
+    <section class="top-menu">
+      <h2 class="ttl-style fadein-anime">こじまわらべの逸品</h2>
+      <div class="top-menu__box">
+        <div class="top-menu__img fadein-anime02">
+          <img src="assets/img/top/top-menu01.jpg" alt="こじまわらべの逸品">
         </div>
-        <div class="top-about__text-wrap">
-          <p class="top-about__text">朝獲れ新鮮。<br>
-            小田原魚市場で、毎朝新鮮な魚を買い付け。</p>
-        </div>
-      </div>
-      <div class="top-about__box">
-        <div class="top-about__text-wrap">
-          <p class="top-about__text">魚に合わせた<br>
-            一番おいしい食べ方をご提供。</p>
-        </div>
-        <div class="top-about__img top-about__img--order fadein-anime02">
-          <img src="assets/img/top/top-about02.jpg" alt="わらべが美味しい理由">
+        <div class="top-menu__text-wrap">
+          <p class="top-menu__text">
+            <span>こじま食堂の金目鯛</span>
+            こじま食堂料理長の復帰と指導により帰ってきた、50年の味。<br>
+半世紀にわたるご支持を継承します。<br>
+関東一円に熱烈な支持者をもつ唯一無二の味。</p>
         </div>
       </div>
-      <div class="top-about__box">
-        <div class="top-about__img  fadein-anime02">
-          <img src="assets/img/top/top-about03.jpg" alt="わらべが美味しい理由">
+      <div class="top-menu__box">
+        <div class="top-menu__text-wrap">
+          <p class="top-menu__text"><span>小田原港わらべのアジフライ</span>行列店わらべ不動の人気メニュー。<br>
+            本店で修行したスタッフによりそのままをご提供。<br>
+            「サクッ、ふわっ」の感動を。</p>
         </div>
-        <div class="top-about__text-wrap">
-          <p class="top-about__text">こだわりの食材を、<br>
-            職人技でもっと美味しく。</p>
+        <div class="top-menu__img top-menu__img--order fadein-anime02">
+          <img src="assets/img/top/top-menu02.jpg" alt="こじまわらべの逸品">
         </div>
       </div>
-      <p class="top-about__bottom-text">小田原の新鮮な地魚と、新潟の契約農家さんから仕入れたお米を、<br class="pc-block">
-        職人の技術で至福の料理に仕上げる。<br>
-        わらべでしか味わえない感動をご提供いたします</p>
-    </section> -->
+      <div class="top-menu__box">
+        <div class="top-menu__img  fadein-anime02">
+          <img src="assets/img/top/top-menu03.jpg" alt="こじまわらべの逸品">
+        </div>
+        <div class="top-menu__text-wrap">
+          <p class="top-menu__text"><span>なめろう風 漁師丼</span>海老名の大手フードコートに出店していた期間中に<br class="pc-block">
+            10万食を売り上げたオリジナル海鮮丼が小田原に凱旋。<br>
+            ​今後味わえるのは「こじまわらべ」だけ。</p>
+        </div>
+      </div>
 
-
-    <!-- <section class="top-store">
-      <h2 class="ttl-style fadein-anime">贅沢な時間は、漁港にある。</h2>
-      <p class="top-store__lead">お客様の食の感動を引き立てるため、店舗空間にもこだわりあり。<br>
-        松本デザイナー監修のモダンな店舗デザインで、イメージを刷新。<br>
-        五感で贅沢に、魚料理を味わえます。</p>
-      <div class="top-store__box">
-        <div class="top-store__item">
-          <h3 class="top-store__item-ttl">わらべ菜魚洞</h3>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store01.jpg" alt="わらべ菜魚洞 店舗写真">
-          </div>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store02.jpg" alt="わらべ菜魚洞 店舗写真">
-          </div>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store03.jpg" alt="わらべ菜魚洞 店舗写真">
-          </div>
-          <a href="#"  class="top-store__link"><img src="assets/img/top/top-store-link.png" alt="View more"></a>
-        </div>
-        <div class="top-store__item">
-          <h3 class="top-store__item-ttl">こじまわらべ</h3>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store04.jpg" alt="こじまわらべ 店舗写真">
-          </div>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store05.jpg" alt="こじまわらべ 店舗写真">
-          </div>
-          <div class="top-store__item-img fadein-anime02">
-            <img src="assets/img/top/top-store06.jpg" alt="こじまわらべ 店舗写真">
-          </div>
-          <a href="#"  class="top-store__link"><img src="assets/img/top/top-store-link.png" alt="View more"></a>
-        </div>
-      </div>
-    </section> -->
+    </section>
 
 
-    <!-- <section class="top-insta">
-      <div class="top-insta__inner">
-      
-        <h2 class="ttl-style fadein-anime">最新の営業状況</h2>
-        <h3 class="top-insta__sub-ttl">わらべ菜魚洞</h3>
-        <div class="top-insta__box">
-          
+    <section class="top-store">
+      <h2 class="ttl-style fadein-anime">こだわりの空間</h2>
+      <div class="page-about__slider carousel-js pc-block">
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel01.jpg">
         </div>
-        <h3 class="top-insta__sub-ttl">こじまわらべ</h3>
-        <div class="top-insta__box">
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel02.jpg">
+        </div>
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel03.jpg">
+        </div>
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel01.jpg">
+        </div>
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel02.jpg">
+        </div>
+        <div class="page-about__slider-item">
+          <img src="assets/img/subpage/carousel03.jpg">
+        </div>
       </div>
+      <div class="page-about__sp-img sp-block">
+        <img src="assets/img/subpage/carousel01.jpg">
       </div>
-    </section> -->
+      <p class="top-store__lead">空間デザイナー、松本英明氏の手により、<br>
+        全ての座席、全ての空間を<br>
+        ひとつひとつこだわりながら空間演出。<br>
+        <br>
+        味はもちろん、五感全てで小田原漁港の、<br>
+        食体験を楽しんでいただけます。</p>
+        <a href="" class="page-about__btn">ご予約はこちらから</a>
+
+
+    </section>
+
+
+
   </div>
 
 

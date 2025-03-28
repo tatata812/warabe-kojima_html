@@ -985,7 +985,7 @@ header
 トップページ
  ================================= */
 .main-visual {
-  padding: 80px 12px;
+  padding: 80px 12px 60px;
   text-align: center;
 }
 @media (max-width: 820px) {
@@ -994,30 +994,30 @@ header
     padding: 24px 12px;
   }
 }
-.main-visual__top-text {
-  font-size: 36px;
-  margin: 0 0 40px;
+.main-visual__top-img {
+  max-width: 40px;
+  margin: 0 auto 80px;
 }
 @media (max-width: 820px) {
-  .main-visual__top-text {
+  .main-visual__top-img {
+    max-width: 32px;
     text-align: center;
     font-size: 24px;
-    margin: 0 0 24px;
+    margin: 0 auto 40px;
   }
 }
 .main-visual__img {
-  max-width: 200px;
+  max-width: 800px;
   margin: 0 auto 64px;
 }
 @media (max-width: 820px) {
   .main-visual__img {
-    max-width: 120px;
     margin: 0 auto 32px;
   }
 }
 .main-visual__bottom-text {
-  font-size: 28px;
-  margin: 0 0 64px;
+  font-size: 36px;
+  margin: 0 0 48px;
 }
 @media (max-width: 820px) {
   .main-visual__bottom-text {
@@ -1032,7 +1032,7 @@ header
 @media (max-width: 820px) {
   .main-visual__lead-text {
     margin: 0 auto 24px;
-    max-width: 260px;
+    max-width: 340px;
   }
 }
 .top-history {
@@ -1066,33 +1066,33 @@ header
   }
 }
 
-.top-about {
+.top-menu {
   padding: 0 0 140px;
 }
 @media (max-width: 820px) {
-  .top-about {
+  .top-menu {
     padding: 0 0 80px;
   }
 }
-.top-about__box {
+.top-menu__box {
   display: flex;
 }
 @media (max-width: 820px) {
-  .top-about__box {
+  .top-menu__box {
     flex-direction: column;
   }
 }
-.top-about__text-wrap {
+.top-menu__text-wrap {
   width: 50%;
-  background: #F6F6F6;
+  background: #F4E8D6;
   position: relative;
 }
 @media (max-width: 820px) {
-  .top-about__text-wrap {
+  .top-menu__text-wrap {
     width: 100%;
   }
 }
-.top-about__text {
+.top-menu__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1101,120 +1101,58 @@ header
   width: 100%;
 }
 @media (max-width: 820px) {
-  .top-about__text {
+  .top-menu__text {
     position: static;
     transform: translate(0, 0);
     padding: 60px 12px;
   }
 }
-.top-about__img {
+.top-menu__text span {
+  display: block;
+  font-size: 18px;
+  margin: 0 0 18px;
+}
+.top-menu__img {
   width: 50%;
 }
 @media (max-width: 820px) {
-  .top-about__img {
+  .top-menu__img {
     width: 100%;
   }
-  .top-about__img--order {
+  .top-menu__img--order {
     order: -1;
   }
 }
-.top-about__bottom-text {
+.top-menu__bottom-text {
   text-align: center;
   padding: 0 12px;
   margin: 60px 0 0;
 }
 @media (max-width: 820px) {
-  .top-about__bottom-text {
+  .top-menu__bottom-text {
     text-align: left;
     margin: 32px 0 0;
   }
 }
 
 .top-store {
-  padding: 0 12px 140px;
+  padding: 0 0 140px;
 }
 @media (max-width: 820px) {
   .top-store {
-    padding: 0 12px 80px;
+    padding: 0 0 80px;
   }
 }
 .top-store__lead {
   text-align: center;
-  margin: -40px 0 60px;
+  margin: -20px 0 60px;
+  padding: 0 12px;
 }
 @media (max-width: 820px) {
   .top-store__lead {
     text-align: left;
     margin: 0 auto 32px;
   }
-}
-.top-store__box {
-  display: flex;
-  max-width: 1120px;
-  margin: 0 auto;
-  gap: 24px;
-}
-@media (max-width: 820px) {
-  .top-store__box {
-    flex-direction: column;
-  }
-}
-.top-store__item {
-  width: calc((100% - 24px) / 2);
-}
-@media (max-width: 820px) {
-  .top-store__item {
-    width: 100%;
-  }
-}
-.top-store__item-ttl {
-  font-size: 24px;
-  margin: 0 0 20px;
-}
-@media (max-width: 820px) {
-  .top-store__item-ttl {
-    font-size: 20px;
-    margin: 0 0 12px;
-  }
-}
-.top-store__item-img {
-  margin: 0 0 20px;
-}
-.top-store__link {
-  max-width: 160px;
-  display: block;
-  margin: 0 0 0 auto;
-}
-
-.top-insta {
-  padding: 0 12px 140px;
-}
-@media (max-width: 820px) {
-  .top-insta {
-    padding: 0 12px 60px;
-  }
-}
-.top-insta__inner {
-  max-width: 1120px;
-  margin: 0 auto;
-}
-.top-insta__sub-ttl {
-  font-size: 24px;
-  margin: 0 0 20px;
-}
-@media (max-width: 820px) {
-  .top-insta__sub-ttl {
-    font-size: 20px;
-    margin: 0 0 12px;
-  }
-}
-.top-insta__box {
-  height: 300px;
-  background-color: #acacac;
-  margin: 0 0 60px;
-}
-.top-insta__box:last-child {
-  margin: 0;
 }
 
 /* =================================
