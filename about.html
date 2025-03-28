@@ -1,0 +1,239 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>こじまわらべとは</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+  <div class="black-bg"></div>
+
+  <header>
+    <div class="header">
+      <div class="header__inner">
+        <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+              src="assets/img/top/logo.png" alt=""></a>
+        </h1>
+        <nav class="header__menu-wrap header__item">
+          <div class="header__menu-inner">
+            <a href="" class="header__menu">おしながき</a>
+            <a href="" class="header__menu">こじまわらべとは</a>
+            <a href="" class="header__menu">アクセス</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header-btn-wrap">
+        <div class="header-btn-wrap__btn-img" id="js-hamburger-menu">
+          <img src="assets/img/top/hun-btn.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <div class="header-sp__btn-img">
+          <img src="assets/img/top/hun-btn-batsu.png" alt="閉じる">
+        </div>
+        <div class="header-sp__menu">
+         
+          <a href="menu.html" class="header-sp__menu-item">おしながき</a>
+          <a href="about.html" class="header-sp__menu-item">こじまわらべとは</a>
+          <a href="access.html" class="header-sp__menu-item">アクセス</a>
+          <a href="" class="header-sp__menu-item">わらべ菜魚洞</a>
+          <a href="company.html" class="header-sp__menu-item">会社概要・採用情報</a>
+        </div>
+        <div class="header-sp__link">
+          <a href="" class="header-sp__link-item"><img src="assets/img/top/footer-insta.png"
+              alt="Instagramロゴ"><span>わらべ菜魚洞公式</span></a>
+          <a href="" class="header-sp__link-item"><img src="assets/img/top/footer-insta.png"
+              alt="Instagramロゴ"><span>こじまわらべ公式</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="main page-about subpage">
+    <div class="subpage__main-visual subpage__main-visual--no-margin">
+      <img src="assets/img/subpage/about-mv.jpg" alt="こじまわらべとは" class="pc-block">
+      <img src="assets/img/subpage/about-mv-sp.jpg" alt="こじまわらべとは" class="sp-block">
+    </div>
+    <div class=" page-about__top-wrap">
+      <div class="page-about__deco page-about__deco--top">
+        <img src="assets/img/subpage/about-deco-top.png" alt="">
+      </div>
+      <h1 class="ttl-style"><span>About</span>こじまわらべとは</h1>
+      <div class="subpage__lead-wrap">
+        <p class="subpage__lead subpage__lead--margin">
+          小田原港随一の食堂として半世紀、惜しまれつつ閉店した「こじま食堂」。同じ早川で切磋琢磨し合ってきた「わらべ菜魚洞」がその味と技を引き継ぎ、わらべ2号店としてリニューアル。「こじま食堂」元料理長が腕を振るう代名詞の「金目鯛の煮付け」は、変わらぬ味が復活したと好評で、本店の人気メニュー、アジフライや海鮮丼なども楽しめます。有名ホテルなどを手がけるデザイナーによる、カフェのようなおしゃれな店内も話題です。
+        </p>
+      </div>
+    </div>
+
+
+    <div class="page-about__slider carousel-js pc-block">
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel01.jpg">
+      </div>
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel02.jpg">
+      </div>
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel03.jpg">
+      </div>
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel01.jpg">
+      </div>
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel02.jpg">
+      </div>
+      <div class="page-about__slider-item">
+        <img src="assets/img/subpage/carousel03.jpg">
+      </div>
+    </div>
+
+    <div class="page-about__sp-img sp-block">
+      <img src="assets/img/subpage/carousel01.jpg">
+    </div>
+
+    <section class="page-about__section">
+      <h2 class="ttl-style"><span>Store Information</span>店舗案内</h2>
+      <div class="page-about__table-wrap">
+
+        <table class="page-about__table">
+          <tr>
+            <th>店名</th>
+            <td>こじまわらべ</td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>〒250-0021　<br class="sp-block">神奈川県小田原市早川1-13-18</td>
+          </tr>
+          <tr>
+            <th>アクセス</th>
+            <td>電車にて<br>
+              JR早川駅前より徒歩1分<br>
+              <br>
+              車にて<br>
+              西西湘バイパス早川出口から1分<br>
+              小田原厚木道路小田原西出口から4分</td>
+          </tr>
+          <tr>
+            <th>TEL</th>
+            <td><a href="tel:0465-20-8062">0465-20-8062</a></td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>11:00 - 15:00 L.O<br>
+              17:00 - 20:00 L.O</td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>木曜日</td>
+          </tr>
+          <tr>
+            <th>総席数</th>
+            <td>66席<br>
+              全席禁煙</td>
+          </tr>
+          <tr>
+            <th>駐車場</th>
+            <td>20台(専用)</td>
+          </tr>
+          <tr>
+            <th>予約について</th>
+            <td>第1：12台 / 第2：8台<br>
+              計20台</td>
+          </tr>
+        </table>
+      </div>
+
+
+
+      <a href="" class="page-about__btn">ご予約はこちらから</a>
+
+    </section>
+
+
+    <div class="page-about__deco">
+      <img src="assets/img/subpage/about-deco.png" alt="">
+    </div>
+  </div>
+
+
+  <!--main end-->
+
+
+  <footer class="footer">
+    <a class="footer__logo">
+      <img src="assets/img/top/logo.png" alt="わらべ">
+    </a>
+    <div class="footer__time">
+      営業時間<br>
+      11:00 - 15:00 L.O / 17:00 - 20:00 L.O<br>
+      途中休憩の場合あり
+    </div>
+    <div class="footer__time">
+      定休日<br>
+      木曜日
+    </div>
+    <div class="footer__link">
+      <a href="" class="footer__link-item"><img src="assets/img/top/footer-insta.png"
+          alt="Instagramロゴ"><span>わこじまわらべ公式</span></a>
+
+    </div>
+    <div class="footer__menu">
+      <a href="" class="footer__menu-item">わらべグループ</a>
+      <a href="" class="footer__menu-item">わらべ菜魚洞</a>
+      <a href="company.html" class="footer__menu-item">会社概要・採用情報</a>
+
+    </div>
+    <div class="footer__bottom">
+      &copy;Warabe Co., Ltd All Rights Reserved.
+    </div>
+
+  </footer>
+  <div class="follow-btn follow-btn-js">
+    <a href="#" class="follow-btn__item"><img src="assets/img/top/follow-btn01.png" alt="こじまわらべ" /></a>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>
