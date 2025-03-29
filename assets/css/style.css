@@ -452,7 +452,12 @@ th, td {
 }
 .page-about__slider {
   overflow: hidden;
-  margin: 60px 0 80px;
+  margin: 0 0 80px;
+}
+@media (max-width: 820px) {
+  .page-about__slider {
+    margin: 0 0 48px;
+  }
 }
 .page-about__section {
   padding: 0 12px 80px;

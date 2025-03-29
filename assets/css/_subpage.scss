@@ -227,7 +227,12 @@
 
   &__slider {
     overflow: hidden;
-    margin: 60px 0 80px;
+    margin: 0 0 80px;
+
+    @include tab{
+      margin: 0 0 48px;
+
+    }
   }
 
   &__section {
