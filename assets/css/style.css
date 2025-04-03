@@ -391,6 +391,10 @@ th, td {
     margin: 0 0 24px;
   }
 }
+.page-menu__menu-price span {
+  display: block;
+  font-size: 13px;
+}
 .page-menu__img {
   width: 50%;
 }

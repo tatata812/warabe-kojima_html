@@ -90,6 +90,8 @@
   &__menu-price {
     margin: 0 0 40px;
 
+
+
     &--no-margin {
       margin: 0;
     }
@@ -97,6 +99,11 @@
     @include tab{
       margin: 0 0 24px;
 
+    }
+
+    span {
+      display: block;
+      font-size: 13px;
     }
   }
 
