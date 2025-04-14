@@ -235,12 +235,16 @@
   &__slider {
     overflow: hidden;
     margin: 0 0 80px;
+    
 
     @include tab{
       margin: 0 0 48px;
 
-    }
+    }    
   }
+
+
+
 
   &__section {
     padding: 0 12px 80px;
@@ -338,6 +342,7 @@
 
 
 }
+
 
 
 

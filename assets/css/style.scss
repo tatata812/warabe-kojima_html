@@ -233,7 +233,7 @@ header
 
   }
 
-  &__img {
+  &__img-wrap {
     max-width: 800px;
     margin: 0 auto 64px;
 
@@ -242,6 +242,16 @@ header
 
     }
   }
+
+  &__img {
+
+    img {
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+
+
 
   &__bottom-text {
     font-size: 36px;
