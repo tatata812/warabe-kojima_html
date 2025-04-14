@@ -994,7 +994,7 @@ header
 トップページ
  ================================= */
 .main-visual {
-  padding: 80px 12px 24px;
+  padding: 60px 12px 24px;
   text-align: center;
 }
 @media (max-width: 820px) {
@@ -1004,8 +1004,8 @@ header
   }
 }
 .main-visual__top-img {
-  max-width: 40px;
-  margin: 0 auto 80px;
+  max-width: 34px;
+  margin: 0 auto 60px;
 }
 @media (max-width: 820px) {
   .main-visual__top-img {
@@ -1016,7 +1016,7 @@ header
   }
 }
 .main-visual__img-wrap {
-  max-width: 800px;
+  max-width: 920px;
   margin: 0 auto 64px;
 }
 @media (max-width: 820px) {
@@ -1025,7 +1025,7 @@ header
   }
 }
 .main-visual__img img {
-  aspect-ratio: 3/2;
+  aspect-ratio: 5/3;
 }
 .main-visual__bottom-text {
   font-size: 36px;
