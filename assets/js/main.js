@@ -37,7 +37,7 @@ $(function () {
   $(function () {
     $('.main-visual-js').slick({
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 2000,
       speed: 2000,
       arrows: false,
       dots: false,
