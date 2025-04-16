@@ -29,7 +29,7 @@
     margin: 0 auto;
 
     @include tab {
-      padding: 24px 0px;
+      padding: 24px 0px 40px;
 
     }
   }
@@ -117,7 +117,28 @@
 
   }
 
-  &__ {}
+  &__btn {
+    background-color: #1C1C1C;
+    color: #fff;
+    width: 200px;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    margin: 60px auto 0;
+    transition: all 0.5s;
+    border: #1C1C1C 1px solid;
+
+    &:hover {
+      background: #B89D7E;
+      color: #1C1C1C;
+  
+    }
+
+    @include tab{
+      margin: 40px auto 0;
+
+    }
+  }
 
   &__ {}
 
