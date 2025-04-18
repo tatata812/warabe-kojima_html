@@ -58,10 +58,8 @@ header
       justify-content: space-between;
       padding: 4px 0;
       height: 50px;
-
     }
   }
-
 
   &__ttl-wrap {
     padding: 0 0 0 3%;
@@ -174,7 +172,6 @@ header
     gap: 10px;
     color: #fff;
 
-
     img {
       width: 24px;
     }
@@ -191,9 +188,6 @@ header
     align-items: flex-end;
     gap: 8px;
     margin: 0 0 24px;
-
-
-
   }
 
   &__menu-item {
@@ -214,9 +208,7 @@ header
   @include tab {
     text-align: left;
     padding: 24px 12px 12px;
-
   }
-
 
   &__top-img {
     max-width: 280px;
@@ -224,13 +216,10 @@ header
 
     @include tab {
       max-width: 180px;
-
       text-align: center;
       font-size: 24px;
       margin: 0 auto 40px;
-
     }
-
   }
 
   &__img-wrap {
@@ -239,7 +228,6 @@ header
 
     @include tab {
       margin: 0 auto 32px;
-
     }
   }
 
@@ -250,9 +238,6 @@ header
     }
   }
 
-
-
-
   &__bottom-text {
     font-size: 36px;
     margin: 0 0 48px;
@@ -261,25 +246,18 @@ header
       font-size: 22px;
       margin: 0 0 32px;
       text-align: center;
-
     }
   }
 
   &__lead-text {
     margin: 0 0 24px;
 
-
     @include tab {
       margin: 0 auto 24px;
       max-width: 340px;
     }
-
   }
-
-  &__ {}
-
 }
-
 
 
 .top-history {
@@ -320,7 +298,6 @@ header
 
   @include tab {
     padding: 0 0 80px;
-
   }
 
   &__box {
@@ -331,17 +308,14 @@ header
     }
   }
 
-
-
   &__text-wrap {
     width: 50%;
-    background:  #F4E8D6;
+    background: #F4E8D6;
     position: relative;
 
     @include tab {
       width: 100%;
     }
-
   }
 
 
@@ -358,6 +332,7 @@ header
       transform: translate(0, 0);
       padding: 60px 12px;
     }
+
     span {
       display: block;
       font-size: 18px;
@@ -393,7 +368,6 @@ header
 }
 
 
-
 .top-store {
   padding: 0 0 140px;
 
@@ -406,24 +380,12 @@ header
     margin: -20px 0 60px;
     padding: 0 12px;
 
-
-
     @include tab {
       text-align: left;
       margin: 0 auto 32px;
     }
   }
-
-  
-
 }
-
-
-
-
-
-
-
 
 /* =================================
 footer
@@ -453,8 +415,6 @@ footer
     margin: 0 0 24px;
     font-size: 14px;
     color: #fff;
-
-
   }
 
   &__link {
@@ -468,7 +428,6 @@ footer
       align-items: center;
       gap: 12px;
     }
-
   }
 
   &__link-item {
@@ -476,8 +435,6 @@ footer
     color: #fff;
     gap: 10px;
     font-size: 14px;
-
-
 
     img {
       width: 24px;
@@ -517,7 +474,6 @@ footer
 
     @include tab {
       border-left: none;
-
     }
   }
 
