@@ -219,11 +219,11 @@ header
 
 
   &__top-img {
-    max-width: 34px;
+    max-width: 280px;
     margin: 0 auto 60px;
 
     @include tab {
-      max-width: 32px;
+      max-width: 180px;
 
       text-align: center;
       font-size: 24px;
@@ -460,8 +460,8 @@ footer
   &__link {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 0 0 24px;
+    gap: 32px;
+    margin: 0 0 40px;
 
     @include tab {
       flex-direction: column;
@@ -486,6 +486,11 @@ footer
     span {
       white-space: nowrap;
     }
+  }
+
+  &__tabelog {
+    max-width: 200px;
+    margin: 0 auto 24px;
   }
 
   &__menu {
